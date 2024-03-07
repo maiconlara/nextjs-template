@@ -1,6 +1,7 @@
 import "./globals.css";
 import type {Metadata} from "next";
 import {Poppins, Plus_Jakarta_Sans} from "next/font/google";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
             <body
                 className={`${poppins.variable} ${jakarta.variable} bg-background relative flex min-h-screen w-full max-w-full flex-col items-center justify-center overflow-x-hidden font-sans`}
             >
+                <SpeedInsights />
                 {children}
             </body>
         </html>
