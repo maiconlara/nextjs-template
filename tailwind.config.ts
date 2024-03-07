@@ -14,7 +14,7 @@ const config: Config = {
             },
             colors: {
                 steel: {
-                    50: "#f5f7fa",
+                    50: "#f7fafc",
                     100: "#eaeef4",
                     200: "#d0dae7",
                     300: "#a7bbd2",
@@ -42,6 +42,8 @@ const config: Config = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        
+    ],
 };
 export default config;
