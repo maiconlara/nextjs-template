@@ -2,7 +2,6 @@ import "./globals.css";
 import type {Metadata} from "next";
 import {Poppins, Plus_Jakarta_Sans} from "next/font/google";
 import {SpeedInsights} from "@vercel/speed-insights/next";
-
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
@@ -13,12 +12,10 @@ const jakarta = Plus_Jakarta_Sans({
     weight: ["400", "500", "600", "700"],
     variable: "--font-jakarta",
 });
-
 export const metadata: Metadata = {
     title: "NextJS Template",
     description: "Enjooooy!",
 };
-
 export default function RootLayout({
     children,
 }: Readonly<{
